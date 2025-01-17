@@ -1,0 +1,14 @@
+import 'package:equatable/equatable.dart';
+
+class DeleteTodoRequestModel extends Equatable {
+  const DeleteTodoRequestModel({
+    required this.todoId,
+    required this.userId,
+  });
+
+  final String todoId;
+  final String userId;
+
+  @override
+  List<Object> get props => [todoId, userId];
+}
